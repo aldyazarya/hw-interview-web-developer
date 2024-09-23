@@ -4,13 +4,15 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #121212;
+  --secondary: #ffc90d;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #121212;
+    --foreground: #ffffff;
+    --secondary: #ffc90d;
   }
 }
 
@@ -24,4 +26,16 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.tooltip-arrow {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: -8px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #1f2937; /* Sesuaikan dengan warna tooltip */
 }
